@@ -9,6 +9,9 @@ public class ReceivingThread extends Thread{
 	@Override
 	public void run()
 	{
-		
+		while(true)
+		{
+			handleNetwork.receive();
+		}
 	}
 }
